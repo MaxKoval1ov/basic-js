@@ -1,5 +1,32 @@
 import { NotImplementedError } from '../extensions/index.js';
-
+ let alphabet = [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+    ];
 /**
  * Implement class VigenereCipheringMachine that allows us to create
  * direct and reverse ciphering machines according to task description
@@ -27,34 +54,7 @@ export default class VigenereCipheringMachine {
 
   encrypt(string, key) {
     if (string === undefined || key === undefined) throw new Error("Incorrect arguments!");
-    let alphabet = [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F",
-      "G",
-      "H",
-      "I",
-      "J",
-      "K",
-      "L",
-      "M",
-      "N",
-      "O",
-      "P",
-      "Q",
-      "R",
-      "S",
-      "T",
-      "U",
-      "V",
-      "W",
-      "X",
-      "Y",
-      "Z",
-    ];
+   
     string=string.toUpperCase().split("");
     key=key.toUpperCase().split("");
     let ind=0;
@@ -72,34 +72,6 @@ export default class VigenereCipheringMachine {
   }
   decrypt(string, key) {
     if (string === undefined || key === undefined) throw new Error("Incorrect arguments!");
-    let alphabet = [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F",
-      "G",
-      "H",
-      "I",
-      "J",
-      "K",
-      "L",
-      "M",
-      "N",
-      "O",
-      "P",
-      "Q",
-      "R",
-      "S",
-      "T",
-      "U",
-      "V",
-      "W",
-      "X",
-      "Y",
-      "Z",
-    ];
     string=string.toUpperCase().split("");
     key=key.toUpperCase().split("");
     let ind=0;
